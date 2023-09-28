@@ -36,21 +36,6 @@
     margin-right: 5px; /* Aggiunge uno spazio tra l'icona e il testo */
 }
 
-/* Media query per rendere il CSS responsive */
-@media (max-width: 756px) {
-    .navbar {
-        background-color: #008fd7; /* Cambia il colore di sfondo della navbar per schermi più piccoli */
-    }
-
-    .input-group {
-        max-width: 100%; /* Imposta la larghezza massima della barra di ricerca al 100% */
-    }
-
-    .form-control {
-        width: 100%; /* Imposta la larghezza del campo di input al 100% per schermi più piccoli */
-    }
-}
-
 .navbarsotto {
     background-color: #1d428a;
 }
@@ -99,22 +84,36 @@
     display: block;
 }
 
-/* Navbar superiore */
-.navbar-top {
-    background-color: #fff;
+/* Stile per la barra superiore */
+.top-bar {
+    background-color: #f0f0f0; /* Colore di sfondo della barra superiore */
+    height: 30px; /* Altezza della barra superiore */
+    line-height: 30px; /* Allineamento verticale al centro */
+    text-align: right; /* Allinea il testo a destra */
+    margin-left: auto; /* Rimuovi il margine sinistro */
+    margin-right: 10px; /* Rimuovi il margine destro */
 }
 
-.navbar-top .navbar-text {
-    color: #000;
-    font-size: 8px;
+/* Stile per la lista di elementi nella barra superiore */
+.top-bar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-top .navbar-nav .nav-item .nav-link {
-    color: #000;
-    font-size: 8px;
-    padding: 5px 10px;
+/* Stile per ciascun elemento nella barra superiore */
+.top-bar-item {
+    display: inline-block;
+    margin-left: 10px; /* Spaziatura tra gli elementi */
 }
 
-.navbar-top .navbar-nav .nav-item .nav-link:hover {
-    text-decoration: underline;
+/* Stile per i link nella barra superiore */
+.top-bar-link {
+    color: #333; /* Colore dei link */
+    text-decoration: none; /* Rimuovi la sottolineatura dei link */
+}
+
+/* Stile al passaggio del mouse sui link nella barra superiore */
+.top-bar-link:hover {
+    text-decoration: underline; /* Sottolinea il link al passaggio del mouse */
 }
