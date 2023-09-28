@@ -1,0 +1,120 @@
+/* Sovrascrivi le classi CSS di Bootstrap per personalizzare la navbar */
+.navbar {
+    background-color: #008fd7; /* Cambia il colore di sfondo della navbar */
+}
+
+/* Stile per la barra di ricerca */
+
+.container {
+    justify-content: center;
+    align-items: center; /* Aggiunto per centrare verticalmente */
+    height: 100%; /* Imposta l'altezza del container al 100% per centrare verticalmente */
+}
+
+.input-group {
+    max-width: 80%; /* Imposta la larghezza massima della barra di ricerca al 80% */
+    width: 100%; /* Imposta la larghezza al 100% */
+}
+
+.form-control {
+    border-radius: 30px; /* Aggiungi una leggera curva ai bordi dell'input di ricerca */
+    width: 100%; /* Imposta la larghezza del campo di input al 100% */
+}
+
+/* Sovrascrivi le classi Bootstrap esistenti per il pulsante di ricerca e l'icona */
+.btn-search {
+    background-color: #fff; /* Cambia il colore di sfondo del pulsante di ricerca */
+    border-color: #fff; /* Cambia il colore del bordo del pulsante di ricerca */
+    border-radius: 30px;
+}
+.btn-search:hover {
+    background-color: #fff; /* Cambia il colore di sfondo del pulsante al passaggio del mouse */
+    border-color: #fff; /* Cambia il colore del bordo del pulsante al passaggio del mouse */
+}
+
+.btn-search i {
+    margin-right: 5px; /* Aggiunge uno spazio tra l'icona e il testo */
+}
+
+/* Media query per rendere il CSS responsive */
+@media (max-width: 756px) {
+    .navbar {
+        background-color: #008fd7; /* Cambia il colore di sfondo della navbar per schermi più piccoli */
+    }
+
+    .input-group {
+        max-width: 100%; /* Imposta la larghezza massima della barra di ricerca al 100% */
+    }
+
+    .form-control {
+        width: 100%; /* Imposta la larghezza del campo di input al 100% per schermi più piccoli */
+    }
+}
+
+.navbarsotto {
+    background-color: #1d428a;
+}
+
+.navbar-brand {
+    color: #4b6499;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 17px;
+    padding: 4px 48.7px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #4b6499;
+    color: #fff;
+}
+
+/* Rimuovi la freccetta del dropdown */
+.dropdown-toggle::after {
+    content: none;
+}
+
+/* Nascondi i dropdown */
+.navbar-nav .nav-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    width: auto;
+}
+
+/* Stile per i dropdown items */
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: #000;
+    padding: 8px 20px;
+}
+
+/* Mostra il dropdown al passaggio del mouse */
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Navbar superiore */
+.navbar-top {
+    background-color: #fff;
+}
+
+.navbar-top .navbar-text {
+    color: #000;
+    font-size: 8px;
+}
+
+.navbar-top .navbar-nav .nav-item .nav-link {
+    color: #000;
+    font-size: 8px;
+    padding: 5px 10px;
+}
+
+.navbar-top .navbar-nav .nav-item .nav-link:hover {
+    text-decoration: underline;
+}
