@@ -2,13 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <%@ include file="navbar.jsp" %>
 </head>
 <body>
-<iframe src="navbar.jsp" width="100%" height="100%"></iframe>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<c:forEach var="squadra" items="${squadre}">
+    <p>${squadra.nomeSquadra} - ${squadra.pathLogo}</p>
+</c:forEach>
 </body>
-
 </html>

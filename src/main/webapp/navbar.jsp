@@ -52,10 +52,10 @@
                     SHOP BY TEAM
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                    <c:forEach var="squadra" items="${cappelli}">
+                    <c:forEach var="squadra" items="${squadre}">
                         <a class="dropdown-item" href="#">
-                            <img src="<c:out value='${squadra.immagine}' />" alt="<c:out value='${squadra.nome}' />">
-                            <c:out value="${squadra.nome}" />
+                            <img src="<c:out value='${squadra.pathLogo}' />" alt="<c:out value='${squadra.nomeSquadra}' />">
+                            <c:out value="${squadra.nomeSquadra}"/>
                         </a>
                     </c:forEach>
                 </div>
@@ -65,10 +65,10 @@
                     UOMINI
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                    <c:forEach var="squadra" items="${cappelli}">
+                    <c:forEach var="squadra" items="${squadre}">
                         <a class="dropdown-item" href="#">
-                            <img src="<c:out value='${squadra.immagine}' />" alt="<c:out value='${squadra.nome}' />">
-                            <c:out value="${squadra.nome}" />
+                            <img src="<c:out value='${squadra.pathLogo}' />" alt="<c:out value='${squadra.nomeSquadra}' />">
+                            <c:out value="${squadra.nomeSquadra}" />
                         </a>
                     </c:forEach>
                 </div>
@@ -78,10 +78,10 @@
                     DONNE
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                    <c:forEach var="squadra" items="${cappelli}">
+                    <c:forEach var="squadra" items="${squadre}">
                         <a class="dropdown-item" href="#">
-                            <img src="<c:out value='${squadra.immagine}' />" alt="<c:out value='${squadra.nome}' />">
-                            <c:out value="${squadra.nome}" />
+                            <img src="<c:out value='${squadra.pathLogo}' />" alt="<c:out value='${squadra.nomeSquadra}' />">
+                            <c:out value="${squadra.nomeSquadra}" />
                         </a>
                     </c:forEach>
                 </div>
@@ -91,10 +91,10 @@
                     BAMBINI
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                    <c:forEach var="squadra" items="${cappelli}">
+                    <c:forEach var="squadra" items="${squadre}">
                         <a class="dropdown-item" href="#">
-                            <img src="<c:out value='${squadra.immagine}' />" alt="<c:out value='${squadra.nome}' />">
-                            <c:out value="${squadra.nome}" />
+                            <img src="<c:out value='${squadra.pathLogo}' />" alt="<c:out value='${squadra.nomeSquadra}' />">
+                            <c:out value="${squadra.nomeSquadra}" />
                         </a>
                     </c:forEach>
                 </div>
@@ -104,10 +104,10 @@
                     MAGLIE
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                    <c:forEach var="squadra" items="${cappelli}">
+                    <c:forEach var="squadra" items="${squadre}">
                         <a class="dropdown-item" href="#">
-                            <img src="<c:out value='${squadra.immagine}' />" alt="<c:out value='${squadra.nome}' />">
-                            <c:out value="${squadra.nome}" />
+                            <img src="<c:out value='${squadra.pathLogo}' />" alt="<c:out value='${squadra.nomeSquadra}' />">
+                            <c:out value="${squadra.nomeSquadra}" />
                         </a>
                     </c:forEach>
                 </div>
@@ -117,10 +117,10 @@
                     CALZATURE
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown6">
-                    <c:forEach var="squadra" items="${cappelli}">
+                    <c:forEach var="squadra" items="${squadre}">
                         <a class="dropdown-item" href="#">
-                            <img src="<c:out value='${squadra.immagine}' />" alt="<c:out value='${squadra.nome}' />">
-                            <c:out value="${squadra.nome}" />
+                            <img src="<c:out value='${squadra.pathLogo}' />" alt="<c:out value='${squadra.nomeSquadra}' />">
+                            <c:out value="${squadra.nomeSquadra}" />
                         </a>
                     </c:forEach>
                 </div>
