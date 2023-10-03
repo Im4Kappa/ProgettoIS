@@ -92,6 +92,16 @@
     display: block;
 }
 
+.dropdown-item{
+    width: 150px;
+    height: 25px;
+}
+
+.stemma {
+    width: 25px;
+    height: auto;
+}
+
 /* Stile per la barra superiore */
 .top-bar {
     background-color:  var(--main-white); /* Colore di sfondo della barra superiore */
